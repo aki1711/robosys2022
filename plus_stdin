@@ -1,31 +1,18 @@
 #!/usr/bin/python3
-<<<<<<< HEAD
 # SPDX-FileCopyrightText:2022 Akiya Wakaumi
 # SPDX-License-Identifier: BSD-3-Clause
-=======
->>>>>>> c8bdb27b7c5e25fcb71fc5ddf8e90df2f614f520
 import sys
 
 def tonum(s):
     try:
         return int(s)
     except:
-<<<<<<< HEAD
         return float(s)
 
 ans = 0
 for line in sys.stdin:
     line = line.rstrip()
-    ans += tonum(line)
-=======
-        return float(s)　 
-　 
-ans = 0
-for line in sys.stdin:
-    line = line.rstrip()
-    ans += int(line)
+    ans += tonum(line) 
 
-　 
->>>>>>> c8bdb27b7c5e25fcb71fc5ddf8e90df2f614f520
 
 print(ans)
