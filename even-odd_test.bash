@@ -16,6 +16,14 @@ out=$(seq 5 | ./even-odd)
 out=$(seq 4 | ./even-odd)
 [ "${out}" = "even number" ] || ng ${LINENO}
 
+### STRANGE INPUT ##
+out=$(echo あ | ./even-odd)
+[ "$?" = 1 ]      || ng ${LINENO}
+[ "${out}" = "" ] || ng ${LINENO}
+
+out=$(echo | ./even-odd)
+[ "$?" = 1 ]      || ng ${LINENO}
+[ "${out}" = "" ] || ng ${LINENO}
 
 [ "$res" = 0 ] && echo OK
 exit $res
