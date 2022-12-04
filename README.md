@@ -1,10 +1,10 @@
 # robosys2022
 ![test](https://github.com/aki1711/robosys2022/actions/workflows/test.yml/badge.svg)
 
-#このリポジトリについて
+##このリポジトリについて
 このリポジトリはロボットシステム学の講義で使用したリポジトリです。
 
-#使用方法
+##使用方法
 * 以下のコマンドを実行して、リポジトリをクローンします。
 ```
 $ git clone https://github.com/aki1711/robosys2022.git
@@ -13,13 +13,13 @@ $ git clone https://github.com/aki1711/robosys2022.git
 ```
 $ cd robosys2022
 ``` 
-#plusコマンド
+##plusコマンド
 標準入力から読み込んだ数字を足します。実行結果は以下のとおりです。
 ```
 $ seq 150 | ./plus
 11325
 ```
-#even-oddコマンド
+##even-oddコマンド
 標準入力から読み込んだ数字を足したあと、その結果が偶数(even number)か奇数(odd number)か判別します。実行結果は以下のとおりです。
 ```
 $ seq 150 | ./even-odd
