@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python 
 # SPDX-FileCopyrightText:2022 Akiya Wakaumi
 # SPDX-License-Identifier: BSD-3-Clause
 import sys
@@ -12,7 +12,9 @@ def tonum(s):
 ans = 0
 for line in sys.stdin:
     line = line.rstrip()
-    ans += tonum(line) 
+    ans += tonum(line)
 
-
-print(ans)
+if (ans %2 == 0):
+    print("even number")
+else:
+    print("odd number")
