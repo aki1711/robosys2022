@@ -13,12 +13,12 @@ res=0
 out=$(seq 5 | ./plus)
 [ "${out}" = 15 ] || ng ${LINENO}
 
-### STRANGE INPUT ###
-out=$(echo あ | ./plus)
+### STRANGE INPUT ##
+out=$(echo あ | ./even-odd)
 [ "$?" = 1 ]      || ng ${LINENO}
 [ "${out}" = "" ] || ng ${LINENO}
 
-out=$(echo | ./plus) 
+out=$(echo | ./even-odd)
 [ "$?" = 1 ]      || ng ${LINENO}
 [ "${out}" = "" ] || ng ${LINENO}
 
